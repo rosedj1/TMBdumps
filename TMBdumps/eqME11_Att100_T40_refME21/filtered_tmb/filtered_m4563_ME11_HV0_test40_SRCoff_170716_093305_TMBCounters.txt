@@ -1,0 +1,2352 @@
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 27557
+   1ALCT: alct1 valid pattern flag received                 819
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  2969
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        25165
+  14CLCT: Pretrigger on CFEB0                               10343
+  15CLCT: Pretrigger on CFEB1                               8000
+  16CLCT: Pretrigger on CFEB2                               7377
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               275
+  19CLCT: Pretrigger on CFEB5                               262
+  20CLCT: Pretrigger on CFEB6                               246
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  753
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 24402
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3340
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        74307
+  29CLCT: clct0 sent to TMB matching section                21825
+  30CLCT: clct1 sent to TMB matching section                531
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   21778
+  32TMB:  TMB clct*alct matched trigger                     21778
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            47
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           21079
+  44TMB:  Matching found one CLCT                           21247
+  45TMB:  Matching found two ALCTs                          699
+  46TMB:  Matching found two CLCTs                          531
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           156
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           324
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 88
+  50TMB:  Transmitted LCT0 to MPC                           21778
+  51TMB:  Transmitted LCT1 to MPC                           855
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   21778
+  55L1A:  L1A received                                      2980
+  56L1A:  L1A received, TMB in L1A window                   2965
+  57L1A:  L1A received, no TMB in window                    15
+  58L1A:  TMB triggered, no L1A in window                   18813
+  59L1A:  TMB readouts completed                            2965
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               973
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54378
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                27665
+  67HDR:  CLCT counter                                      21832
+  68HDR:  TMB trigger counter                               21782
+  69HDR:  ALCTs received counter                            27839
+  70HDR:  L1As received counter (12 bits)                   2980
+  71HDR:  Readout counter (12 bits)                         2965
+  72HDR:  Orbit counter                                     104802
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    4
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         4
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 760
+   1ALCT: alct1 valid pattern flag received                 4
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7275
+  14CLCT: Pretrigger on CFEB0                               1989
+  15CLCT: Pretrigger on CFEB1                               2174
+  16CLCT: Pretrigger on CFEB2                               2717
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               187
+  19CLCT: Pretrigger on CFEB5                               122
+  20CLCT: Pretrigger on CFEB6                               139
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  444
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6831
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7253
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9043
+  29CLCT: clct0 sent to TMB matching section                22
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   16
+  32TMB:  TMB clct*alct matched trigger                     16
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            6
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           16
+  44TMB:  Matching found one CLCT                           16
+  45TMB:  Matching found two ALCTs                          0
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           16
+  51TMB:  Transmitted LCT1 to MPC                           0
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   16
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   16
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2497
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147594
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                34963
+  67HDR:  CLCT counter                                      21854
+  68HDR:  TMB trigger counter                               21798
+  69HDR:  ALCTs received counter                            28604
+  70HDR:  L1As received counter (12 bits)                   2980
+  71HDR:  Readout counter (12 bits)                         2965
+  72HDR:  Orbit counter                                     252851
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    5
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         5
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 29380
+   1ALCT: alct1 valid pattern flag received                 754
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3153
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26486
+  14CLCT: Pretrigger on CFEB0                               10864
+  15CLCT: Pretrigger on CFEB1                               8449
+  16CLCT: Pretrigger on CFEB2                               7739
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               301
+  19CLCT: Pretrigger on CFEB5                               265
+  20CLCT: Pretrigger on CFEB6                               282
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  811
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25665
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3361
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        78548
+  29CLCT: clct0 sent to TMB matching section                23125
+  30CLCT: clct1 sent to TMB matching section                564
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   23079
+  32TMB:  TMB clct*alct matched trigger                     23079
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            46
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22423
+  44TMB:  Matching found one CLCT                           22515
+  45TMB:  Matching found two ALCTs                          656
+  46TMB:  Matching found two CLCTs                          564
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           202
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           294
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 104
+  50TMB:  Transmitted LCT0 to MPC                           23079
+  51TMB:  Transmitted LCT1 to MPC                           858
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   23079
+  55L1A:  L1A received                                      3162
+  56L1A:  L1A received, TMB in L1A window                   3150
+  57L1A:  L1A received, no TMB in window                    12
+  58L1A:  TMB triggered, no L1A in window                   19929
+  59L1A:  TMB readouts completed                            3150
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               940
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                61461
+  67HDR:  CLCT counter                                      44979
+  68HDR:  TMB trigger counter                               44877
+  69HDR:  ALCTs received counter                            57987
+  70HDR:  L1As received counter (12 bits)                   2046
+  71HDR:  Readout counter (12 bits)                         2019
+  72HDR:  Orbit counter                                     307224
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    2
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         2
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 751
+   1ALCT: alct1 valid pattern flag received                 7
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7223
+  14CLCT: Pretrigger on CFEB0                               1928
+  15CLCT: Pretrigger on CFEB1                               2235
+  16CLCT: Pretrigger on CFEB2                               2685
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               217
+  19CLCT: Pretrigger on CFEB5                               118
+  20CLCT: Pretrigger on CFEB6                               119
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  449
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6774
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7197
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9058
+  29CLCT: clct0 sent to TMB matching section                26
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   15
+  32TMB:  TMB clct*alct matched trigger                     15
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            11
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           14
+  44TMB:  Matching found one CLCT                           15
+  45TMB:  Matching found two ALCTs                          1
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           1
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           15
+  51TMB:  Transmitted LCT1 to MPC                           1
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   15
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   15
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2636
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147805
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                68690
+  67HDR:  CLCT counter                                      45005
+  68HDR:  TMB trigger counter                               44892
+  69HDR:  ALCTs received counter                            58738
+  70HDR:  L1As received counter (12 bits)                   2046
+  71HDR:  Readout counter (12 bits)                         2019
+  72HDR:  Orbit counter                                     455275
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    9
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         9
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 28761
+   1ALCT: alct1 valid pattern flag received                 801
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3056
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26140
+  14CLCT: Pretrigger on CFEB0                               10709
+  15CLCT: Pretrigger on CFEB1                               8211
+  16CLCT: Pretrigger on CFEB2                               7719
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               314
+  19CLCT: Pretrigger on CFEB5                               267
+  20CLCT: Pretrigger on CFEB6                               290
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  818
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25309
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3341
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        77343
+  29CLCT: clct0 sent to TMB matching section                22799
+  30CLCT: clct1 sent to TMB matching section                565
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   22747
+  32TMB:  TMB clct*alct matched trigger                     22747
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            52
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22067
+  44TMB:  Matching found one CLCT                           22182
+  45TMB:  Matching found two ALCTs                          680
+  46TMB:  Matching found two CLCTs                          565
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           212
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           327
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 90
+  50TMB:  Transmitted LCT0 to MPC                           22747
+  51TMB:  Transmitted LCT1 to MPC                           892
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   22747
+  55L1A:  L1A received                                      3066
+  56L1A:  L1A received, TMB in L1A window                   3047
+  57L1A:  L1A received, no TMB in window                    19
+  58L1A:  TMB triggered, no L1A in window                   19700
+  59L1A:  TMB readouts completed                            3047
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        1
+  61STAT: CLCT Triads skipped                               1021
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54126
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                94838
+  67HDR:  CLCT counter                                      67804
+  68HDR:  TMB trigger counter                               67639
+  69HDR:  ALCTs received counter                            87500
+  70HDR:  L1As received counter (12 bits)                   1016
+  71HDR:  Readout counter (12 bits)                         970
+  72HDR:  Orbit counter                                     509647
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    2
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         2
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 730
+   1ALCT: alct1 valid pattern flag received                 4
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7289
+  14CLCT: Pretrigger on CFEB0                               2023
+  15CLCT: Pretrigger on CFEB1                               2163
+  16CLCT: Pretrigger on CFEB2                               2732
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               196
+  19CLCT: Pretrigger on CFEB5                               116
+  20CLCT: Pretrigger on CFEB6                               115
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  426
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6863
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7260
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9045
+  29CLCT: clct0 sent to TMB matching section                29
+  30CLCT: clct1 sent to TMB matching section                1
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   14
+  32TMB:  TMB clct*alct matched trigger                     14
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            15
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           14
+  44TMB:  Matching found one CLCT                           14
+  45TMB:  Matching found two ALCTs                          0
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           14
+  51TMB:  Transmitted LCT1 to MPC                           0
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   14
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   14
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2638
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147805
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                102138
+  67HDR:  CLCT counter                                      67833
+  68HDR:  TMB trigger counter                               67653
+  69HDR:  ALCTs received counter                            88232
+  70HDR:  L1As received counter (12 bits)                   1016
+  71HDR:  Readout counter (12 bits)                         970
+  72HDR:  Orbit counter                                     657698
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 27482
+   1ALCT: alct1 valid pattern flag received                 733
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3026
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        25030
+  14CLCT: Pretrigger on CFEB0                               10239
+  15CLCT: Pretrigger on CFEB1                               8030
+  16CLCT: Pretrigger on CFEB2                               7358
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               267
+  19CLCT: Pretrigger on CFEB5                               279
+  20CLCT: Pretrigger on CFEB6                               256
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  747
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 24269
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3313
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        74045
+  29CLCT: clct0 sent to TMB matching section                21717
+  30CLCT: clct1 sent to TMB matching section                525
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   21663
+  32TMB:  TMB clct*alct matched trigger                     21663
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            54
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           21012
+  44TMB:  Matching found one CLCT                           21138
+  45TMB:  Matching found two ALCTs                          651
+  46TMB:  Matching found two CLCTs                          525
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           182
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           308
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 88
+  50TMB:  Transmitted LCT0 to MPC                           21663
+  51TMB:  Transmitted LCT1 to MPC                           833
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   21663
+  55L1A:  L1A received                                      3037
+  56L1A:  L1A received, TMB in L1A window                   3024
+  57L1A:  L1A received, no TMB in window                    13
+  58L1A:  TMB triggered, no L1A in window                   18639
+  59L1A:  TMB readouts completed                            3024
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               904
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54126
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                127178
+  67HDR:  CLCT counter                                      89550
+  68HDR:  TMB trigger counter                               89316
+  69HDR:  ALCTs received counter                            115715
+  70HDR:  L1As received counter (12 bits)                   4053
+  71HDR:  Readout counter (12 bits)                         3994
+  72HDR:  Orbit counter                                     712070
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    4
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         4
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 750
+   1ALCT: alct1 valid pattern flag received                 3
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7378
+  14CLCT: Pretrigger on CFEB0                               2074
+  15CLCT: Pretrigger on CFEB1                               2232
+  16CLCT: Pretrigger on CFEB2                               2706
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               183
+  19CLCT: Pretrigger on CFEB5                               124
+  20CLCT: Pretrigger on CFEB6                               123
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  429
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6949
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7351
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9181
+  29CLCT: clct0 sent to TMB matching section                27
+  30CLCT: clct1 sent to TMB matching section                1
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   20
+  32TMB:  TMB clct*alct matched trigger                     20
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            7
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           18
+  44TMB:  Matching found one CLCT                           19
+  45TMB:  Matching found two ALCTs                          2
+  46TMB:  Matching found two CLCTs                          1
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           1
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           20
+  51TMB:  Transmitted LCT1 to MPC                           2
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   20
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   20
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2623
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147796
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                134572
+  67HDR:  CLCT counter                                      89577
+  68HDR:  TMB trigger counter                               89336
+  69HDR:  ALCTs received counter                            116466
+  70HDR:  L1As received counter (12 bits)                   4053
+  71HDR:  Readout counter (12 bits)                         3994
+  72HDR:  Orbit counter                                     860110
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    7
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         7
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 29244
+   1ALCT: alct1 valid pattern flag received                 781
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3175
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26449
+  14CLCT: Pretrigger on CFEB0                               10727
+  15CLCT: Pretrigger on CFEB1                               8457
+  16CLCT: Pretrigger on CFEB2                               7813
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               292
+  19CLCT: Pretrigger on CFEB5                               260
+  20CLCT: Pretrigger on CFEB6                               296
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  803
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25628
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3399
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        78405
+  29CLCT: clct0 sent to TMB matching section                23050
+  30CLCT: clct1 sent to TMB matching section                564
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   23010
+  32TMB:  TMB clct*alct matched trigger                     23010
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            40
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22327
+  44TMB:  Matching found one CLCT                           22446
+  45TMB:  Matching found two ALCTs                          683
+  46TMB:  Matching found two CLCTs                          564
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           189
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           308
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 103
+  50TMB:  Transmitted LCT0 to MPC                           23010
+  51TMB:  Transmitted LCT1 to MPC                           872
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   23010
+  55L1A:  L1A received                                      3183
+  56L1A:  L1A received, TMB in L1A window                   3170
+  57L1A:  L1A received, no TMB in window                    13
+  58L1A:  TMB triggered, no L1A in window                   19840
+  59L1A:  TMB readouts completed                            3170
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               987
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54137
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                161033
+  67HDR:  CLCT counter                                      112627
+  68HDR:  TMB trigger counter                               112346
+  69HDR:  ALCTs received counter                            145713
+  70HDR:  L1As received counter (12 bits)                   3140
+  71HDR:  Readout counter (12 bits)                         3068
+  72HDR:  Orbit counter                                     914493
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    6
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         6
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 796
+   1ALCT: alct1 valid pattern flag received                 7
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7238
+  14CLCT: Pretrigger on CFEB0                               1911
+  15CLCT: Pretrigger on CFEB1                               2134
+  16CLCT: Pretrigger on CFEB2                               2811
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               187
+  19CLCT: Pretrigger on CFEB5                               144
+  20CLCT: Pretrigger on CFEB6                               114
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  444
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6794
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7210
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9035
+  29CLCT: clct0 sent to TMB matching section                28
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   20
+  32TMB:  TMB clct*alct matched trigger                     20
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            8
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           19
+  44TMB:  Matching found one CLCT                           20
+  45TMB:  Matching found two ALCTs                          1
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           1
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           20
+  51TMB:  Transmitted LCT1 to MPC                           1
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   20
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   20
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2544
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147792
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                168283
+  67HDR:  CLCT counter                                      112655
+  68HDR:  TMB trigger counter                               112366
+  69HDR:  ALCTs received counter                            146511
+  70HDR:  L1As received counter (12 bits)                   3140
+  71HDR:  Readout counter (12 bits)                         3068
+  72HDR:  Orbit counter                                     1062531
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    12
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         12
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 30928
+   1ALCT: alct1 valid pattern flag received                 834
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3348
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        27898
+  14CLCT: Pretrigger on CFEB0                               11435
+  15CLCT: Pretrigger on CFEB1                               8819
+  16CLCT: Pretrigger on CFEB2                               8249
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               315
+  19CLCT: Pretrigger on CFEB5                               281
+  20CLCT: Pretrigger on CFEB6                               274
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  826
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 27061
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3406
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        82926
+  29CLCT: clct0 sent to TMB matching section                24492
+  30CLCT: clct1 sent to TMB matching section                598
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   24432
+  32TMB:  TMB clct*alct matched trigger                     24432
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            60
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           23701
+  44TMB:  Matching found one CLCT                           23834
+  45TMB:  Matching found two ALCTs                          731
+  46TMB:  Matching found two CLCTs                          598
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           207
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           340
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 98
+  50TMB:  Transmitted LCT0 to MPC                           24432
+  51TMB:  Transmitted LCT1 to MPC                           938
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   24432
+  55L1A:  L1A received                                      3354
+  56L1A:  L1A received, TMB in L1A window                   3337
+  57L1A:  L1A received, no TMB in window                    17
+  58L1A:  TMB triggered, no L1A in window                   21095
+  59L1A:  TMB readouts completed                            3337
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               1017
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                196193
+  67HDR:  CLCT counter                                      137147
+  68HDR:  TMB trigger counter                               136798
+  69HDR:  ALCTs received counter                            177439
+  70HDR:  L1As received counter (12 bits)                   2398
+  71HDR:  Readout counter (12 bits)                         2309
+  72HDR:  Orbit counter                                     1116904
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 763
+   1ALCT: alct1 valid pattern flag received                 5
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7268
+  14CLCT: Pretrigger on CFEB0                               2009
+  15CLCT: Pretrigger on CFEB1                               2157
+  16CLCT: Pretrigger on CFEB2                               2710
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               210
+  19CLCT: Pretrigger on CFEB5                               141
+  20CLCT: Pretrigger on CFEB6                               101
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  448
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6820
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7246
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9107
+  29CLCT: clct0 sent to TMB matching section                22
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   15
+  32TMB:  TMB clct*alct matched trigger                     15
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            7
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           14
+  44TMB:  Matching found one CLCT                           15
+  45TMB:  Matching found two ALCTs                          1
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           1
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           15
+  51TMB:  Transmitted LCT1 to MPC                           1
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   15
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   15
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2639
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147805
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                203474
+  67HDR:  CLCT counter                                      137169
+  68HDR:  TMB trigger counter                               136813
+  69HDR:  ALCTs received counter                            178203
+  70HDR:  L1As received counter (12 bits)                   2398
+  71HDR:  Readout counter (12 bits)                         2309
+  72HDR:  Orbit counter                                     1264954
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    7
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         7
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 29259
+   1ALCT: alct1 valid pattern flag received                 856
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3189
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26542
+  14CLCT: Pretrigger on CFEB0                               10897
+  15CLCT: Pretrigger on CFEB1                               8445
+  16CLCT: Pretrigger on CFEB2                               7739
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               276
+  19CLCT: Pretrigger on CFEB5                               304
+  20CLCT: Pretrigger on CFEB6                               291
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  826
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25706
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3385
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        78692
+  29CLCT: clct0 sent to TMB matching section                23157
+  30CLCT: clct1 sent to TMB matching section                601
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   23104
+  32TMB:  TMB clct*alct matched trigger                     23104
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            53
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22367
+  44TMB:  Matching found one CLCT                           22503
+  45TMB:  Matching found two ALCTs                          737
+  46TMB:  Matching found two CLCTs                          601
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           209
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           345
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 98
+  50TMB:  Transmitted LCT0 to MPC                           23104
+  51TMB:  Transmitted LCT1 to MPC                           946
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   23104
+  55L1A:  L1A received                                      3197
+  56L1A:  L1A received, TMB in L1A window                   3185
+  57L1A:  L1A received, no TMB in window                    12
+  58L1A:  TMB triggered, no L1A in window                   19919
+  59L1A:  TMB readouts completed                            3185
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               931
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                230026
+  67HDR:  CLCT counter                                      160326
+  68HDR:  TMB trigger counter                               159917
+  69HDR:  ALCTs received counter                            207462
+  70HDR:  L1As received counter (12 bits)                   1499
+  71HDR:  Readout counter (12 bits)                         1398
+  72HDR:  Orbit counter                                     1319327
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 753
+   1ALCT: alct1 valid pattern flag received                 8
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7224
+  14CLCT: Pretrigger on CFEB0                               2044
+  15CLCT: Pretrigger on CFEB1                               2112
+  16CLCT: Pretrigger on CFEB2                               2669
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               197
+  19CLCT: Pretrigger on CFEB5                               118
+  20CLCT: Pretrigger on CFEB6                               139
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  454
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6770
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7199
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9095
+  29CLCT: clct0 sent to TMB matching section                25
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   13
+  32TMB:  TMB clct*alct matched trigger                     13
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            12
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           12
+  44TMB:  Matching found one CLCT                           13
+  45TMB:  Matching found two ALCTs                          1
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           1
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           13
+  51TMB:  Transmitted LCT1 to MPC                           1
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   13
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   13
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2578
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147803
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                237266
+  67HDR:  CLCT counter                                      160351
+  68HDR:  TMB trigger counter                               159930
+  69HDR:  ALCTs received counter                            208216
+  70HDR:  L1As received counter (12 bits)                   1499
+  71HDR:  Readout counter (12 bits)                         1398
+  72HDR:  Orbit counter                                     1467377
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    9
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         9
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 28370
+   1ALCT: alct1 valid pattern flag received                 810
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3170
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        25825
+  14CLCT: Pretrigger on CFEB0                               10433
+  15CLCT: Pretrigger on CFEB1                               8177
+  16CLCT: Pretrigger on CFEB2                               7740
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               292
+  19CLCT: Pretrigger on CFEB5                               275
+  20CLCT: Pretrigger on CFEB6                               284
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  809
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25006
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3336
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        76409
+  29CLCT: clct0 sent to TMB matching section                22489
+  30CLCT: clct1 sent to TMB matching section                551
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   22438
+  32TMB:  TMB clct*alct matched trigger                     22438
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            51
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           21733
+  44TMB:  Matching found one CLCT                           21887
+  45TMB:  Matching found two ALCTs                          705
+  46TMB:  Matching found two CLCTs                          551
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           188
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           342
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 87
+  50TMB:  Transmitted LCT0 to MPC                           22438
+  51TMB:  Transmitted LCT1 to MPC                           893
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   22438
+  55L1A:  L1A received                                      3180
+  56L1A:  L1A received, TMB in L1A window                   3158
+  57L1A:  L1A received, no TMB in window                    22
+  58L1A:  TMB triggered, no L1A in window                   19280
+  59L1A:  TMB readouts completed                            3158
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        1
+  61STAT: CLCT Triads skipped                               1021
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                263103
+  67HDR:  CLCT counter                                      182840
+  68HDR:  TMB trigger counter                               182368
+  69HDR:  ALCTs received counter                            236587
+  70HDR:  L1As received counter (12 bits)                   583
+  71HDR:  Readout counter (12 bits)                         460
+  72HDR:  Orbit counter                                     1521750
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    4
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         4
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 782
+   1ALCT: alct1 valid pattern flag received                 4
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7143
+  14CLCT: Pretrigger on CFEB0                               1941
+  15CLCT: Pretrigger on CFEB1                               2140
+  16CLCT: Pretrigger on CFEB2                               2700
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               179
+  19CLCT: Pretrigger on CFEB5                               124
+  20CLCT: Pretrigger on CFEB6                               112
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  415
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6728
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7119
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        8967
+  29CLCT: clct0 sent to TMB matching section                24
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   14
+  32TMB:  TMB clct*alct matched trigger                     14
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            10
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           14
+  44TMB:  Matching found one CLCT                           14
+  45TMB:  Matching found two ALCTs                          0
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           14
+  51TMB:  Transmitted LCT1 to MPC                           0
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   14
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   14
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2526
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147805
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                270255
+  67HDR:  CLCT counter                                      182864
+  68HDR:  TMB trigger counter                               182382
+  69HDR:  ALCTs received counter                            237370
+  70HDR:  L1As received counter (12 bits)                   583
+  71HDR:  Readout counter (12 bits)                         460
+  72HDR:  Orbit counter                                     1669800
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    6
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         6
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 28984
+   1ALCT: alct1 valid pattern flag received                 797
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3183
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26253
+  14CLCT: Pretrigger on CFEB0                               10616
+  15CLCT: Pretrigger on CFEB1                               8463
+  16CLCT: Pretrigger on CFEB2                               7701
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               301
+  19CLCT: Pretrigger on CFEB5                               280
+  20CLCT: Pretrigger on CFEB6                               266
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  798
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 25440
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3395
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        77712
+  29CLCT: clct0 sent to TMB matching section                22858
+  30CLCT: clct1 sent to TMB matching section                583
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   22811
+  32TMB:  TMB clct*alct matched trigger                     22811
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            47
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22102
+  44TMB:  Matching found one CLCT                           22229
+  45TMB:  Matching found two ALCTs                          709
+  46TMB:  Matching found two CLCTs                          582
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           181
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           308
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 87
+  50TMB:  Transmitted LCT0 to MPC                           22811
+  51TMB:  Transmitted LCT1 to MPC                           890
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   22811
+  55L1A:  L1A received                                      3184
+  56L1A:  L1A received, TMB in L1A window                   3176
+  57L1A:  L1A received, no TMB in window                    8
+  58L1A:  TMB triggered, no L1A in window                   19635
+  59L1A:  TMB readouts completed                            3176
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               924
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                296529
+  67HDR:  CLCT counter                                      205722
+  68HDR:  TMB trigger counter                               205193
+  69HDR:  ALCTs received counter                            266355
+  70HDR:  L1As received counter (12 bits)                   3767
+  71HDR:  Readout counter (12 bits)                         3636
+  72HDR:  Orbit counter                                     1724173
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    4
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         4
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 778
+   1ALCT: alct1 valid pattern flag received                 1
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7436
+  14CLCT: Pretrigger on CFEB0                               2043
+  15CLCT: Pretrigger on CFEB1                               2248
+  16CLCT: Pretrigger on CFEB2                               2813
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               167
+  19CLCT: Pretrigger on CFEB5                               113
+  20CLCT: Pretrigger on CFEB6                               127
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  405
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 7031
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7414
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9310
+  29CLCT: clct0 sent to TMB matching section                22
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   13
+  32TMB:  TMB clct*alct matched trigger                     13
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            9
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           13
+  44TMB:  Matching found one CLCT                           13
+  45TMB:  Matching found two ALCTs                          0
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           13
+  51TMB:  Transmitted LCT1 to MPC                           0
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   13
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   13
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2560
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147804
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                303977
+  67HDR:  CLCT counter                                      205744
+  68HDR:  TMB trigger counter                               205206
+  69HDR:  ALCTs received counter                            267133
+  70HDR:  L1As received counter (12 bits)                   3767
+  71HDR:  Readout counter (12 bits)                         3636
+  72HDR:  Orbit counter                                     1872223
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    12
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         12
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 30004
+   1ALCT: alct1 valid pattern flag received                 796
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3209
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        27130
+  14CLCT: Pretrigger on CFEB0                               11030
+  15CLCT: Pretrigger on CFEB1                               8561
+  16CLCT: Pretrigger on CFEB2                               8018
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               305
+  19CLCT: Pretrigger on CFEB5                               290
+  20CLCT: Pretrigger on CFEB6                               334
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  876
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 26242
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3472
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        80416
+  29CLCT: clct0 sent to TMB matching section                23658
+  30CLCT: clct1 sent to TMB matching section                584
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   23595
+  32TMB:  TMB clct*alct matched trigger                     23595
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            63
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22903
+  44TMB:  Matching found one CLCT                           23012
+  45TMB:  Matching found two ALCTs                          692
+  46TMB:  Matching found two CLCTs                          583
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           226
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           335
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 83
+  50TMB:  Transmitted LCT0 to MPC                           23595
+  51TMB:  Transmitted LCT1 to MPC                           918
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   23595
+  55L1A:  L1A received                                      3218
+  56L1A:  L1A received, TMB in L1A window                   3201
+  57L1A:  L1A received, no TMB in window                    17
+  58L1A:  TMB triggered, no L1A in window                   20394
+  59L1A:  TMB readouts completed                            3201
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               940
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                331119
+  67HDR:  CLCT counter                                      229402
+  68HDR:  TMB trigger counter                               228801
+  69HDR:  ALCTs received counter                            297139
+  70HDR:  L1As received counter (12 bits)                   2889
+  71HDR:  Readout counter (12 bits)                         2741
+  72HDR:  Orbit counter                                     1926596
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 782
+   1ALCT: alct1 valid pattern flag received                 9
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7134
+  14CLCT: Pretrigger on CFEB0                               1971
+  15CLCT: Pretrigger on CFEB1                               2092
+  16CLCT: Pretrigger on CFEB2                               2682
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               208
+  19CLCT: Pretrigger on CFEB5                               130
+  20CLCT: Pretrigger on CFEB6                               116
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  451
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6683
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7112
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        8945
+  29CLCT: clct0 sent to TMB matching section                22
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   17
+  32TMB:  TMB clct*alct matched trigger                     17
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            5
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           15
+  44TMB:  Matching found one CLCT                           17
+  45TMB:  Matching found two ALCTs                          2
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           2
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           17
+  51TMB:  Transmitted LCT1 to MPC                           2
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   17
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   17
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2580
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147793
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                338261
+  67HDR:  CLCT counter                                      229424
+  68HDR:  TMB trigger counter                               228818
+  69HDR:  ALCTs received counter                            297922
+  70HDR:  L1As received counter (12 bits)                   2889
+  71HDR:  Readout counter (12 bits)                         2741
+  72HDR:  Orbit counter                                     2074635
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    11
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         11
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 28298
+   1ALCT: alct1 valid pattern flag received                 805
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3121
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        25758
+  14CLCT: Pretrigger on CFEB0                               10440
+  15CLCT: Pretrigger on CFEB1                               8209
+  16CLCT: Pretrigger on CFEB2                               7653
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               293
+  19CLCT: Pretrigger on CFEB5                               264
+  20CLCT: Pretrigger on CFEB6                               289
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  797
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 24944
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3413
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        76039
+  29CLCT: clct0 sent to TMB matching section                22345
+  30CLCT: clct1 sent to TMB matching section                538
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   22283
+  32TMB:  TMB clct*alct matched trigger                     22283
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            62
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           21592
+  44TMB:  Matching found one CLCT                           21745
+  45TMB:  Matching found two ALCTs                          691
+  46TMB:  Matching found two CLCTs                          538
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           186
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           339
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 82
+  50TMB:  Transmitted LCT0 to MPC                           22283
+  51TMB:  Transmitted LCT1 to MPC                           877
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   22283
+  55L1A:  L1A received                                      3127
+  56L1A:  L1A received, TMB in L1A window                   3112
+  57L1A:  L1A received, no TMB in window                    15
+  58L1A:  TMB triggered, no L1A in window                   19171
+  59L1A:  TMB readouts completed                            3112
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               948
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54139
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                364029
+  67HDR:  CLCT counter                                      251769
+  68HDR:  TMB trigger counter                               251101
+  69HDR:  ALCTs received counter                            326220
+  70HDR:  L1As received counter (12 bits)                   1920
+  71HDR:  Readout counter (12 bits)                         1757
+  72HDR:  Orbit counter                                     2129019
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 789
+   1ALCT: alct1 valid pattern flag received                 3
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7151
+  14CLCT: Pretrigger on CFEB0                               2058
+  15CLCT: Pretrigger on CFEB1                               2131
+  16CLCT: Pretrigger on CFEB2                               2632
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               157
+  19CLCT: Pretrigger on CFEB5                               104
+  20CLCT: Pretrigger on CFEB6                               125
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  386
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6765
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7135
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        8885
+  29CLCT: clct0 sent to TMB matching section                16
+  30CLCT: clct1 sent to TMB matching section                0
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   10
+  32TMB:  TMB clct*alct matched trigger                     10
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            6
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           10
+  44TMB:  Matching found one CLCT                           10
+  45TMB:  Matching found two ALCTs                          0
+  46TMB:  Matching found two CLCTs                          0
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           10
+  51TMB:  Transmitted LCT1 to MPC                           0
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   10
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   10
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2527
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147792
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                371190
+  67HDR:  CLCT counter                                      251785
+  68HDR:  TMB trigger counter                               251111
+  69HDR:  ALCTs received counter                            327011
+  70HDR:  L1As received counter (12 bits)                   1920
+  71HDR:  Readout counter (12 bits)                         1757
+  72HDR:  Orbit counter                                     2277058
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    11
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         11
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 29607
+   1ALCT: alct1 valid pattern flag received                 822
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  3295
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        26883
+  14CLCT: Pretrigger on CFEB0                               11016
+  15CLCT: Pretrigger on CFEB1                               8595
+  16CLCT: Pretrigger on CFEB2                               7793
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               290
+  19CLCT: Pretrigger on CFEB5                               290
+  20CLCT: Pretrigger on CFEB6                               314
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  847
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 26019
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      3425
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        79733
+  29CLCT: clct0 sent to TMB matching section                23458
+  30CLCT: clct1 sent to TMB matching section                571
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   23401
+  32TMB:  TMB clct*alct matched trigger                     23401
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            57
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           22715
+  44TMB:  Matching found one CLCT                           22831
+  45TMB:  Matching found two ALCTs                          686
+  46TMB:  Matching found two CLCTs                          570
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           206
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           322
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 92
+  50TMB:  Transmitted LCT0 to MPC                           23401
+  51TMB:  Transmitted LCT1 to MPC                           892
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   23401
+  55L1A:  L1A received                                      3301
+  56L1A:  L1A received, TMB in L1A window                   3286
+  57L1A:  L1A received, no TMB in window                    15
+  58L1A:  TMB triggered, no L1A in window                   20115
+  59L1A:  TMB readouts completed                            3286
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               977
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               54127
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                398088
+  67HDR:  CLCT counter                                      275243
+  68HDR:  TMB trigger counter                               274512
+  69HDR:  ALCTs received counter                            356619
+  70HDR:  L1As received counter (12 bits)                   1125
+  71HDR:  Readout counter (12 bits)                         947
+  72HDR:  Orbit counter                                     2331431
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    3
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         3
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================
+Chamber: ME+1/1/GIF
+--------------------------------------------------------
+---              Counters                             --
+--------------------------------------------------------
+   0ALCT: alct0 valid pattern flag received                 787
+   1ALCT: alct1 valid pattern flag received                 3
+   2ALCT: alct data structure error                         0
+   3ALCT: trigger path ECC; 1 bit error corrected           0
+   4ALCT: trigger path ECC; 2 bit error uncorrected         0
+   5ALCT: trigger path ECC; > 2 bit error uncorrected       0
+   6ALCT: trigger path ECC; > 2 bit error blanked           0
+   7ALCT: alct replied ECC; 1 bit error corrected           0
+   8ALCT: alct replied ECC; 2 bit error uncorrected         0
+   9ALCT: alct replied ECC; > 2 bit error uncorrected       0
+  10ALCT: raw hits readout                                  0
+  11ALCT: raw hits readout - CRC error                      0
+  12                                                        0
+  13CLCT: Pretrigger                                        7205
+  14CLCT: Pretrigger on CFEB0                               1970
+  15CLCT: Pretrigger on CFEB1                               2190
+  16CLCT: Pretrigger on CFEB2                               2665
+  17CLCT: Pretrigger on CFEB3                               0
+  18CLCT: Pretrigger on CFEB4                               187
+  19CLCT: Pretrigger on CFEB5                               130
+  20CLCT: Pretrigger on CFEB6                               125
+  21CLCT: Pretrigger on ME1A CFEB 4-6 only                  439
+  22CLCT: Pretrigger on ME1B CFEBs 0-3 only                 6766
+  23CLCT: Discarded, no wrbuf available, buffer stalled     0
+  24CLCT: Discarded, no ALCT in window                      0
+  25CLCT: Discarded, CLCT0 invalid pattern after drift      7180
+  26CLCT: CLCT0 pass hit thresh, fail pid_thresh_postdrift  0
+  27CLCT: CLCT1 pass hit thresh, fail pid_thresh_postdrift  0
+  28CLCT: BX pretrig waiting for triads to dissipate        9005
+  29CLCT: clct0 sent to TMB matching section                25
+  30CLCT: clct1 sent to TMB matching section                1
+  31TMB:  TMB accepted alct*clct, alct-only, or clct-only   16
+  32TMB:  TMB clct*alct matched trigger                     16
+  33TMB:  TMB alct-only trigger                             0
+  34TMB:  TMB clct-only trigger                             0
+  35TMB:  TMB match reject event                            9
+  36TMB:  TMB match reject event, queued for nontrig readout0
+  37TMB:  TMB matching discarded an ALCT pair               0
+  38TMB:  TMB matching discarded a CLCT pair                0
+  39TMB:  TMB matching discarded CLCT0 from ME1A            0
+  40TMB:  TMB matching discarded CLCT1 from ME1A            0
+  41TMB:  Matching found no ALCT                            0
+  42TMB:  Matching found no CLCT                            0
+  43TMB:  Matching found one ALCT                           15
+  44TMB:  Matching found one CLCT                           15
+  45TMB:  Matching found two ALCTs                          1
+  46TMB:  Matching found two CLCTs                          1
+  47TMB:  ALCT0 copied into ALCT1 to make 2nd LCT           0
+  48TMB:  CLCT0 copied into CLCT1 to make 2nd LCT           0
+  49TMB:  LCT1 has higher quality than LCT0 (ranking error) 0
+  50TMB:  Transmitted LCT0 to MPC                           16
+  51TMB:  Transmitted LCT1 to MPC                           1
+  52TMB:  MPC accepted LCT0                                 0
+  53TMB:  MPC accepted LCT1                                 0
+  54TMB:  MPC rejected both LCT0 and LCT1                   16
+  55L1A:  L1A received                                      0
+  56L1A:  L1A received, TMB in L1A window                   0
+  57L1A:  L1A received, no TMB in window                    0
+  58L1A:  TMB triggered, no L1A in window                   16
+  59L1A:  TMB readouts completed                            0
+  60L1A:  TMB readouts lost by 1-event-per-L1A limit        0
+  61STAT: CLCT Triads skipped                               2589
+  62STAT: Raw hits buffer had to be reset                   0
+  63STAT: TTC Resyncs received                              0
+  64STAT: Sync Error, BC0/BXN=offset mismatch               147804
+  65STAT: Parity Error in CFEB or RPC raw hits RAM          0
+  66HDR:  Pretrigger counter                                405310
+  67HDR:  CLCT counter                                      275268
+  68HDR:  TMB trigger counter                               274528
+  69HDR:  ALCTs received counter                            357407
+  70HDR:  L1As received counter (12 bits)                   1125
+  71HDR:  Readout counter (12 bits)                         947
+  72HDR:  Orbit counter                                     2479481
+  73ALCT:Struct Error, expect ALCT0[10:1]=0 when alct0vpf=0 0
+  74ALCT:Struct Error, expect ALCT1[10:1]=0 when alct1vpf=0 0
+  75ALCT:Struct Error, expect ALCT0vpf=1 when alct1vpf=1    0
+  76ALCT:Struct Error, expect ALCT0[10:1]>0 when alct0vpf=1 0
+  77ALCT:Struct Error, expect ALCT1[10:1]>0 when alct1vpf=1 0
+  78ALCT:Struct Error, expect ALCT1!=alct0 when alct0vpf=1  0
+  79CCB:  TTCrx lock lost                                   0
+  80CCB:  qPLL lock lost                                    6
+  81TMB: CLCT pre-trigger and L1A coincidence counter       0
+  82TMB: CLCT pre-trigger and ALCT coincidence counter      0
+  83CLCT: CFEB0 active flag sent to DMB for readout         0
+  84CLCT: CFEB1 active flag sent to DMB for readout         0
+  85CLCT: CFEB2 active flag sent to DMB for readout         0
+  86CLCT: CFEB3 active flag sent to DMB for readout         0
+  87CLCT: CFEB4 active flag sent to DMB for readout         0
+  88CLCT: CFEB5 active flag sent to DMB for readout         6
+  89CLCT: CFEB6 active flag sent to DMB for readout         0
+  90CLCT: CFEB active flag sent to DMB was on ME1A CFEB4-6  0
+  91CLCT: CFEB active flag sent to DMB was on ME1B CFEB0-3  0
+  92CLCT: CFEB active flag sent to DMB was on any CFEB      0
+=================================================================================

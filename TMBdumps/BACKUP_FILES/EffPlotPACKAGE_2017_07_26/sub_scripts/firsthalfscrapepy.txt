@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import cx_Oracle
+
+if not os.path.exists("tmb"): os.mkdir("tmb")
+
+class connectDB:
+	def __init__(self):
+		magic='Read_gif_mnl1%'
+		connect= 'cms_emu_fast_r/' + magic + '@cmsr'
+		self.orcl = cx_Oracle.connect(connect)
+		self.curs = self.orcl.cursor()
+	def cursor(self):
+		return self.curs
+
+orac = connectDB()
+curs = orac.cursor()
+
+cnames = [\
+	"MEASUR_NUM"      ,
+	"ME11_state"      ,
+	"ME21_state"      ,
+	"HV_ME11"         ,
+	"HV_ME21"         ,
+	"HV_SETTING1"     ,
+	"HV_SETTING2"     ,
+	"HV_ME11_EXCEPT"  ,
+	"HV_ME21_EXCEPT"  ,
+	"SOURCE_STATE"    ,
+	"BEAM_STATE"      ,
+	"ATTENUAT_UP"     ,
+	"ATTENUAT_DOWN"   ,
+	"RUN_TYPE"        ,
+	"FILE_NAME"       ,
+	"RUN_COMMENT"
+	]
+
+cshort = [\
+	"meas"   ,
+	"me11"   ,
+	"me21"   ,
+	"hv11"   ,
+	"hv21"   ,
+	"dhv11"  ,
+	"dhv21"  ,
+	"ehv11"  ,
+	"ehv21"  ,
+	"source" ,
+	"beam"   ,
+	"attup"  ,
+	"attdown",
+	"type"   ,
+	"file"   ,
+	"comment"
+	]
+
+cmd = "select "
+cmd += ", ".join(cnames)
+cmd += " from gif_table"
